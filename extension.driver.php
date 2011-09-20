@@ -432,7 +432,11 @@
 				$entry_id
 			));
 			
-			if (isset($data['value'])) {
+			if (isset($data['value_formatted'])) {
+				$result->value = strip_tags($data['value_formatted']);
+			}
+			
+			else if (isset($data['value'])) {
 				$result->value = General::sanitize($data['value']);
 			}
 			
