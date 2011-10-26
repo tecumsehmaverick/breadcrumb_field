@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension id="breadcrumb_field">
 	<name>Breadcrumb Field</name>
-	<description>Link entries together with a breadcrumb</description>
+	<description>A new field that lets you link your entries to each other with an intelligent breadcrumb interface.</description>
 	<repo type="github">https://github.com/rowan-lewis/breadcrumb_field</repo>
 	<url type="discuss">http://symphony-cms.com/discuss/thread/70345/</url>
 	<types>
