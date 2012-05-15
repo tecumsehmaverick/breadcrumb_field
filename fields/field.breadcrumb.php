@@ -165,7 +165,7 @@
 
 				if ($mode == 'tree') {
 					$items = $this->driver->getBreadcrumbChildren(
-						$field, $item->entry
+						$this, $item->entry
 					);
 
 					$this->buildFormattedItem($child, $items, $title, $mode);
