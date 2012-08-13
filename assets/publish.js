@@ -47,11 +47,11 @@
 						.attr('data-breadcrumb-entry');
 					var $current = $(this)
 						.closest('tr');
-					var $children = $table.find(
+					var $children = jQuery($table.find(
 						'tbody tr:has(span[data-breadcrumb-parent = '
 						+ current_entry
 						+ '])'
-					);
+					).get().reverse()); // Reverse the children to get the order right
 					var temp_depth = current_depth;
 					var cookie = 'breadcrumb-tree.'
 						+ parent_entry
